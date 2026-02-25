@@ -19,15 +19,16 @@ class ExpenseStorage:
     def apri(self):
         tmp = {
             "expenses" : [],
-            "category" : []
+            "categories" : []
               }
         with open(self.path, "r") as F:
             appoggio= json.load(F)
             for el in appoggio["expenses"]:
                 tmp["expenses"].append(Expense(el["id"],el["value"],el["categoryId"],el["data"]))
             for el in appoggio["categories"]:
-                tmp["category"].append(Category(el["id"],el["name"]))
+                tmp["categories"].append(Category(el["id"],el["name"]))
                 
     
     def chiudi(self):
-        pass
+        with open(self.path , "w") as F:
+            json.dump(F, self.file)
