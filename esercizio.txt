@@ -1,0 +1,16 @@
+L'obiettivo è creare un gestore di spese personali. Qui gestirai transazioni.
+La sfida aggiuntiva rispetto al progetto precedente sarà implementare dei piccoli metodi di aggregazione 
+(es. "calcola il totale delle spese per una categoria").
+
+Funzionalità richieste (CRUD + Logic):
+Create: Aggiungere una nuova spesa (ID, data, categoria, importo, descrizione).
+
+Retrieve: Visualizzare tutte le spese o filtrare per categoria (es. "Cibo", "Trasporti").
+
+Update: Modificare l'importo o la categoria di una spesa esistente.
+
+Delete: Rimuovere una spesa errata.
+
+Report: Calcolare il totale speso in un determinato mese o per una specifica categoria.
+
+Export: Generare un PDF con una tabella per consultare le spese
