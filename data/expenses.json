@@ -1,0 +1,32 @@
+{
+    "expenses": [
+        {
+            "id": 1,
+            "value": [10, 17],
+            "categoryId": 1,
+            "data": "2026-01-01T07:59:13"
+        },
+        {
+            "id": 2,
+            "value": [462, 25],
+            "categoryId": 2,
+            "data": "2026-02-20T15:34:08"
+        },
+        {
+            "id": 3,
+            "value": [35, 22],
+            "categoryId": 1,
+            "data": "2026-02-22T21:00:16"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Alimentari"
+        },
+        {
+            "id": 2,
+            "name": "Videogiochi"
+        }
+    ]
+}
