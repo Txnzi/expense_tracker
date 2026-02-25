@@ -1,6 +1,6 @@
 import json
-from models.expense import Expense
-from models.category import Category
+from ..models.expense import Expense
+from ..models.category import Category
 
 class ExpenseStorage:
     file : dict[str, Expense | Category] | None
