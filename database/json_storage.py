@@ -3,7 +3,7 @@ from models.expense import Expense
 from models.category import Category
 
 class ExpenseStorage:
-    file : dict[str,int | list[int] | str]
+    file : dict[str, Expense | Category] | None
     __path : str
     
     
@@ -11,7 +11,7 @@ class ExpenseStorage:
     def path(self):
         return self.__path
 
-    def __init__(self, file : None, path : str):
+    def __init__(self, path : str):
         self.file = None
         self.__path = path
     
